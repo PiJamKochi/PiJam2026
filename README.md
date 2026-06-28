@@ -1,16 +1,55 @@
-# React + Vite
+# Raspberry Pi Jam Kochi 2026
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Official event website for **Raspberry Pi Jam Kochi 2026** — a community meetup for Raspberry Pi enthusiasts, makers, educators, and engineers in Kerala.
 
-Currently, two official plugins are available:
+**Date:** Saturday, July 11, 2026 · 10:00 AM – 4:00 PM  
+**Venue:** [TinkerSpace Kochi](https://tinkerspace.in), Kerala
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## About the event
 
-## React Compiler
+Raspberry Pi Jams are independently organised community events where people share knowledge, learn new things, and meet other Raspberry Pi enthusiasts. Pi Jam Kochi 2026 is Kerala's biggest Raspberry Pi community gathering — whether you're a student, hobbyist, educator, or engineer, it's a place to learn, build, share, and connect.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+**Organizers:** Raspberry Pi Foundation, TinkerSpace, MakerGram, Google for Developers
 
-## Expanding the ESLint configuration
+**Register:** [TinkerHub event page](https://tinkerhub.org/events/V5ORC92XYO/Raspberry%20Pi%20Jam)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Tech stack
+
+- [React 19](https://react.dev/) + [Vite 8](https://vite.dev/)
+- [Tailwind CSS v4](https://tailwindcss.com/)
+- [Three.js](https://threejs.org/) for the Pi 5 interactive model
+- [Lucide React](https://lucide.dev/) icons
+
+## Prerequisites
+
+- [Node.js](https://nodejs.org/) 18 or later
+- npm (included with Node.js)
+
+## Run locally
+
+1. Clone the repository and enter the project directory:
+
+   ```bash
+   git clone <repository-url>
+   cd PiJam2026
+   ```
+
+2. Install dependencies:
+
+   ```bash
+   npm install
+   ```
+
+3. Start the development server:
+
+   ```bash
+   npm run dev
+   ```
+
+4. Open the URL shown in the terminal (usually `http://localhost:5173`).
+
+The dev server supports hot module replacement — changes to source files reload automatically.
+
+## License
+
+MIT — see [LICENSE](LICENSE).
