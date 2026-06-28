@@ -144,7 +144,7 @@ export default function Pi5Model() {
     // --- LOAD 3D STEP-CONVERTED CAD MODEL ---
     const gltfLoader = new GLTFLoader();
     gltfLoader.load(
-      '/raspberry_pi_5.glb',
+      `${import.meta.env.BASE_URL}raspberry_pi_5.glb`,
       (gltf) => {
         const model = gltf.scene;
 
