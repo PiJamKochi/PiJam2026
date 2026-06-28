@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
 import { CONFIG } from '../config';
+import raspberryPiLogo from '../assets/Raspberry_Pi_Logo.svg';
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -19,6 +20,7 @@ export default function Header() {
 
   // Dynamically compute nav items based on configuration flags
   const navItems = [
+    { label: 'Why Pi Jam', id: 'about' },
     CONFIG.showTracks && { label: 'Tracks', id: 'tracks' },
     { label: 'Explore Pi 5', id: 'board-explorer' },
     { label: 'Call for Speakers', id: 'speakers' },
@@ -40,38 +42,11 @@ export default function Header() {
         {/* Logo Section - Raspberry Pi Logo in bold comic styling */}
         <div className="flex items-center space-x-3 group cursor-pointer" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
           <div className="relative w-10 h-11 flex items-center justify-center text-teak">
-            <svg viewBox="0 0 100 120" className="w-full h-full stroke-current fill-none" strokeWidth="5.5" strokeLinecap="round" strokeLinejoin="round">
-              {/* Left Leaf */}
-              <path d="M 50 44 C 44 26 31 16 13 18 C 10 26 21 44 46 47 Z" fill="#86c12d" stroke="currentColor" strokeWidth="5.5" />
-              {/* Right Leaf */}
-              <path d="M 50 44 C 56 26 69 16 87 18 C 90 26 79 44 54 47 Z" fill="#86c12d" stroke="currentColor" strokeWidth="5.5" />
-              {/* Leaf Veins */}
-              <path d="M 23 23 C 32 30 41 38 46 45" stroke="currentColor" strokeWidth="4" />
-              <path d="M 77 23 C 68 30 59 38 54 45" stroke="currentColor" strokeWidth="4" />
-
-              {/* Center connection block behind leaves */}
-              <circle cx="50" cy="46" r="10" fill="currentColor" stroke="none" />
-
-              {/* Raspberry Drupelets */}
-              <circle cx="50" cy="58" r="12" fill="#c2185b" stroke="currentColor" strokeWidth="5.5" />
-
-              <circle cx="32" cy="62" r="12" fill="#c2185b" stroke="currentColor" strokeWidth="5.5" />
-              <circle cx="68" cy="62" r="12" fill="#c2185b" stroke="currentColor" strokeWidth="5.5" />
-
-              <circle cx="20" cy="78" r="12" fill="#c2185b" stroke="currentColor" strokeWidth="5.5" />
-              <circle cx="80" cy="78" r="12" fill="#c2185b" stroke="currentColor" strokeWidth="5.5" />
-
-              <circle cx="30" cy="94" r="12" fill="#c2185b" stroke="currentColor" strokeWidth="5.5" />
-              <circle cx="70" cy="94" r="12" fill="#c2185b" stroke="currentColor" strokeWidth="5.5" />
-
-              <circle cx="50" cy="106" r="12" fill="#c2185b" stroke="currentColor" strokeWidth="5.5" />
-
-              <circle cx="50" cy="80" r="14" fill="#c2185b" stroke="currentColor" strokeWidth="5.5" />
-            </svg>
+            <img src={raspberryPiLogo} alt="Raspberry Pi Logo" className="w-full h-full object-contain" />
             <div className="absolute inset-0 border-2 border-teak rounded-lg scale-110 group-hover:scale-120 transition-transform duration-300 pointer-events-none shadow-[2px_2px_0px_0px_var(--color-teak)]" />
           </div>
           <div>
-            <span className="font-sans font-black text-lg tracking-wider text-teak block leading-none mb-1">PI JAM KOCHI</span>
+            <span className="font-sans font-black text-lg tracking-wider text-teak block leading-none mb-1">RASPBERRY PI JAM KOCHI</span>
             <span className="font-sans text-[10px] tracking-[0.25em] text-brass font-black block uppercase">2026</span>
           </div>
         </div>
@@ -94,7 +69,7 @@ export default function Header() {
         <div className="flex items-center space-x-3">
           <button
             onClick={() => setIsMenuOpen(!isMenuOpen)}
-            className="neo-btn p-2.5 bg-kasavu-dark text-teak hover:bg-brass hover:text-teak md:hidden cursor-pointer"
+            className="neo-btn p-2.5 bg-kasavu-dark text-teak hover:bg-brass hover:text-teak md:!hidden cursor-pointer"
             aria-label="Toggle Navigation Menu"
           >
             {isMenuOpen ? <X className="w-4 h-4" /> : <Menu className="w-4 h-4" />}

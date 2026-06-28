@@ -57,10 +57,10 @@ export default function Hero() {
           {/* Title & Description */}
           <div className="relative z-10 my-auto">
             <h2 className="font-sans font-black text-xs uppercase tracking-[0.25em] text-terracotta mb-3">
-              Tinkerhub Community & Makergram
+
             </h2>
             <h1 className="font-sans font-black text-4xl md:text-6xl text-teak tracking-tighter leading-none mb-6">
-              Pi Jam <br />
+              Raspberry Pi Jam <br />
               <span className="text-brass italic font-serif font-black">Kochi 2026</span>
             </h1>
             <p className="text-base md:text-lg text-teak font-bold max-w-xl leading-relaxed mb-8">
@@ -94,14 +94,15 @@ export default function Hero() {
               <div>
                 <span className="text-teak-light block uppercase tracking-wider text-[8px] font-black mb-0.5">REGISTER // TIMER_1</span>
                 <span className="text-teak font-black block text-sm tracking-wide">JULY 11, 2026</span>
-                <span className="text-teak-light text-[9px] block mt-0.5">Saturday  // 9HRS RUNTIME</span>
+                <span className="text-teak font-black block text-sm tracking-wide">10am to 4pm</span>
+                <span className="text-teak-light text-[9px] block mt-0.5">Saturday  // 6HRS RUNTIME</span>
               </div>
             </div>
             <div className="flex items-start gap-3 bg-kasavu p-3 border-2 border-teak rounded-lg shadow-[3px_3px_0px_0px_var(--color-teak)]">
               <MapPin className="w-4 h-4 text-brass shrink-0 mt-0.5" />
               <div>
                 <span className="text-teak-light block uppercase tracking-wider text-[8px] font-black mb-0.5">REGISTER // LOC_REF</span>
-                <span className="text-teak font-black block text-sm tracking-wide">Kochi, Kerala</span>
+                <span className="text-teak font-black block text-sm tracking-wide"> Tinkerspace Kochi, Kerala</span>
                 <span className="text-teak-light text-[9px] block mt-0.5">Lat: 9.9312° N / Lon: 76.2673° E</span>
               </div>
             </div>
