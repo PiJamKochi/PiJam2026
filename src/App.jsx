@@ -5,6 +5,7 @@ import About from './components/About';
 import Tracks from './components/Tracks';
 import InteractiveBoard from './components/InteractiveBoard';
 import Speakers from './components/Speakers';
+import Projects from './components/Projects';
 import Schedule from './components/Schedule';
 import Organizers from './components/Organizers';
 import Register from './components/Register';
@@ -24,6 +25,7 @@ function App() {
         {CONFIG.showTracks && <Tracks />}
         <InteractiveBoard />
         <Speakers />
+        <Projects />
         {CONFIG.showSchedule && <Schedule />}
         <Organizers />
         <Register />

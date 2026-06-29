@@ -24,6 +24,7 @@ export default function Header() {
     CONFIG.showTracks && { label: 'Tracks', id: 'tracks' },
     { label: 'Explore Pi 5', id: 'board-explorer' },
     { label: 'Call for Speakers', id: 'speakers' },
+    { label: 'Call for Projects', id: 'projects' },
     CONFIG.showSchedule && { label: 'Schedule', id: 'schedule' }
   ].filter(Boolean).map((item, idx) => ({
     ...item,
